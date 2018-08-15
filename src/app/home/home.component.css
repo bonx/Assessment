@@ -1,0 +1,15 @@
+.homePage{
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.options{
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+.btn {
+  background: #ff9900 none repeat scroll 0 0;
+}
+.links {
+  color: #ff9900
+}

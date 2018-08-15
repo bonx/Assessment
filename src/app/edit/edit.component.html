@@ -1,0 +1,24 @@
+<div>
+  <h2 style=" color: ghostwhite;">Edit Movie Details</h2>
+  <form #editForm="ngForm" (ngSubmit)="submit(editForm)">
+    <div class="form-group">
+      <label >Title:</label>
+      <input name="title" [(ngModel)] = "title" class="form-control" id="title"  value="{{title}}" >
+    </div>
+    <div class="form-group">
+      <label >Genre:</label>
+      <input name="genre" [(ngModel)] = "genre" class="form-control"  value="{{genre}}" >
+    </div>
+    <div class="form-group">
+      <label >Language:</label>
+      <input name="language" [(ngModel)] = "language" class="form-control"  value="{{language}}" >
+    </div>
+    <div class="form-group">
+      <label >Year:</label>
+      <input name="year" [(ngModel)] = "year" class="form-control"  value="{{year}}">
+    </div>
+    <button type="submit"  class="btn btn-default">Submit</button>
+    <button type="submit" (click)= "back()" class="btn">Back</button>
+  </form>
+
+</div>

@@ -1,0 +1,26 @@
+
+<h2 style=" color: ghostwhite;">List of Available Movies</h2>
+  <table id="dataTable" class="table table-hover table-background rcorners">
+    <thead class="">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Genre</th>
+      <th scope="col">Language</th>
+      <th scope="col">Year</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let movie of movies; let i = index;">
+      <td>{{i + 1}}</td>
+      <td>{{movie.title}}</td>
+      <td>{{movie.genre}}</td>
+      <td>{{movie.language}}</td>
+      <td>{{movie.year}}</td>
+      <td><button type="submit" (click)= "edit(movie.movieId, movie.title, movie.genre, movie.language, movie.year)" class="btn" >Edit</button></td>
+    </tr>
+    </tbody>
+  </table>
+  <button type="submit" (click)= "back()" class="btn" >Back</button>
+
+

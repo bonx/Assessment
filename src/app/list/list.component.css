@@ -1,0 +1,18 @@
+.btn {
+  background: #ff9900 none repeat scroll 0 0;
+}
+.table-background{
+  background: whitesmoke;
+}
+
+.td{
+  color: white;
+}
+
+.rcorners {
+  border-radius: 10px;
+  border: 2px solid Black;
+  padding: 20px;
+  width: 100%;
+  height: 150px;
+}
